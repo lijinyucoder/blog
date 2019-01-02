@@ -1,0 +1,21 @@
+.left{
+    width: 30%;
+    height: 768px;
+    float: left;
+    background-color: rgba(0,0,0,0.5);
+    color: #00F7DE;
+    position: relative;
+}
+.right{
+    width: 70%;
+    height: 768px;
+    float: right;
+    background-color: #ffffff;
+    /*width: 1366px;*/
+    height: 768px;
+}
+.left-content{
+    position: absolute;
+    left:50%;
+    top:50%;
+}

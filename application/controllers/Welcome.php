@@ -20,6 +20,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+	    $day=(strtotime(date("Y-m-d"))-strtotime("2018-10-22"))/3600/24+1;
+	    $week=$day/7;
+	    
+	    $data['day']=$day;
+	    $data['week']=(int)$week;
+		$this->load->view('welcome_message',$data);
 	}
 }
